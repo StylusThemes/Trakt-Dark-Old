@@ -1,0 +1,9 @@
+{
+  "name": "trakt-dark",
+  "version": "3.0.0",
+  "description": "Dark Trakt.tv Theme",
+  "license": "CC-BY-SA-4.0",
+  "scripts": {
+    "build": "node build/build.js"
+  }
+}
