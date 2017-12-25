@@ -1,6 +1,7 @@
 # Dark Trakt.tv
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/2c91e63a889147779c06ab6290647af5)](https://www.codacy.com/app/StylusThemes/Trakt-Dark?utm_source=github.com&utm_medium=referral&utm_content=StylusThemes/Trakt-Dark&utm_campaign=badger)
+[![Dependencies Badge](https://img.shields.io/david/dev/StylusThemes/Trakt-Dark.svg?label=%20devDependencies%20)](https://david-dm.org/StylusThemes/Trakt-Dark?type=dev)
 
 ## Description
 
