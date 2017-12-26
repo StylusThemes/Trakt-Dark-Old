@@ -3,6 +3,8 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/2c91e63a889147779c06ab6290647af5)](https://www.codacy.com/app/StylusThemes/Trakt-Dark?utm_source=github.com&utm_medium=referral&utm_content=StylusThemes/Trakt-Dark&utm_campaign=badger)
 [![Dependencies Badge](https://img.shields.io/david/dev/StylusThemes/Trakt-Dark.svg?label=%20devDependencies%20)](https://david-dm.org/StylusThemes/Trakt-Dark?type=dev)
 
+#### This Theme is currently WIP and not anywhere near ready or even available yet, the two .bak files are of an older re-write I was doing that I decided to scrap. I currently do not have any ETA on when the the re-write will be finished!
+
 ## Description
 
 Dark theme for Trakt.tv - Switch off the lights on Trakt.tv and browse in nighttime mode.
