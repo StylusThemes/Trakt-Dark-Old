@@ -1,9 +1,9 @@
-# Dark Trakt.tv
+# Trakt Dark
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/2c91e63a889147779c06ab6290647af5)](https://www.codacy.com/app/StylusThemes/Trakt-Dark?utm_source=github.com&utm_medium=referral&utm_content=StylusThemes/Trakt-Dark&utm_campaign=badger)
 [![Dependencies Badge](https://img.shields.io/david/dev/StylusThemes/Trakt-Dark.svg?label=%20devDependencies%20)](https://david-dm.org/StylusThemes/Trakt-Dark?type=dev)
 
-#### This Theme is currently WIP and not anywhere near ready or even available yet, the two .bak files are of an older re-write I was doing that I decided to scrap. I currently do not have any ETA on when the the re-write will be finished!
+#### This Theme is currently WIP and not anywhere near ready or even available yet! Currently NO ETA on when this will be finished!
 
 ## Description
 
@@ -29,13 +29,13 @@ Install a userstyle manager for your favorite browser:
 
 If you use the Stylish/Stylus addon you can find one-click installs including automatic updates via the packages below.
 
-> **[Dark Trakt.tv][10]**
+> **[Trakt Dark][10]**
 
 ## Github
 
 If you use the Stylus addon you can now install directly from github.
 
-> **[Dark Trakt.tv][11]**
+> **[Trakt Dark][11]**
 
 ## Bug reports
 

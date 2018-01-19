@@ -1,94 +1,51 @@
-/* ==UserStyle==
-@name        Dark Trakt.tv
-@namespace   github.com/JourneyOver/My-Userstyles/tree/Cleanup_and_Rewrites/trakt.tv
-@homepageURL https://github.com/JourneyOver/My-Userstyles/tree/Cleanup_and_Rewrites/trakt.tv
-@supportURL  https://github.com/JourneyOver/My-Userstyles/issues
-@version     3.0.0
-@updateURL   https://raw.githubusercontent.com/JourneyOver/My-Userstyles/Cleanup_and_Rewrites/trakt.tv/style.user.css
-@description Dark Trakt.tv Theme
-@author      JourneyOver (https://github.com/JourneyOver)
-@license     CC BY-NC-SA 4.0
-
-@advanced color bg "background" #1d1e22
-@advanced color border "borders" #000102
-@advanced color txt "text" #ebebeb
-@advanced color htxt "hover text" #ebebeb
-
-@advanced color bbg "button background" #1d1e22
-@advanced color bborder "button borders" #000102
-@advanced color btxt "button text" #888
-@advanced color bhoverbg "button hover background" #2c2c33
-@advanced color bhovertxt "button hover text" #ebebeb
-
-@advanced color scrollbar "scrollbar color" #333333
-@advanced color scrollbart "scrollbar thumb color" #555555
-
-@advanced color link "link color" #ffffff
-@advanced color hlink "link hover color" #338682
-
-@advanced dropdown Ads "Hide Ads?" {
-ADSY "Yes" <<<EOT
-[class*=huckster], [id*=huckster] { display: none !important; } EOT;
-ADSN "No" <<<EOT
- EOT;
+@-moz-document regexp("http(s)?://trakt.tv/.*") {
+/* ++----------------------------------------------------------------------------------++ */
+/* ||                                                                                  || */
+/* ||* Name        : Trakt Dark                                                        || */
+/* ||                                                                                  || */
+/* ||* Author      : JourneyOver                                                       || */
+/* ||                                                                                  || */
+/* ||* Created     : 03 / 17 / 2016                                                    || */
+/* ||                                                                                  || */
+/* ||* Updated     : 00 / 00 / 201X                                                    || */
+/* ||                                                                                  || */
+/* ||* Version     : 3.0.0                                                             || */
+/* ||                                                                                  || */
+/* ||* Copyright   : 2016-2018                                                         || */
+/* ||                                                                                  || */
+/* ++----------------------------------------------------------------------------------++ */
 }
 
-@advanced dropdown Shop "Hide Shop Button?" {
-ShopY "Yes" <<<EOT
-[id*="header-shop"], .popover-shop { display: none; } EOT;
-ShopN "No" <<<EOT
- EOT;
-}
-
-@advanced dropdown VIP "Hide VIP Stuff?" {
-VIPY "Yes" <<<EOT
-a[href*="/vip/"], a[href*="/widgets"], a[href*="/year"], a[href*="/forums"], [data-tooltip="RSS Feed"], [data-tooltip="iCal Feed"], [data-tooltip="CSV Export"], [data-tooltip="Notifications"], [data-title="Create a custom calendar"], [data-title="Clone into your account"] { display: none !important; } EOT;
-VIPN "No" <<<EOT
- EOT;
-}
-
-==/UserStyle== */
-
-@-moz-document url-prefix("https://trakt.tv") {
+@-moz-document regexp("http(s)?://trakt.tv/.*") {
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: SETTINGS :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 :root {
-  /* Normal settings */
-  --bg: /*[[bg]]*/ !important; /* var(--bg) */
-  --border: /*[[border]]*/!important; /* var(--border) */
+  /* Normal colors */
+  --bg: #1d1e22 !important; /* var(--bg) */
+  --border: #000102 !important; /* var(--border) */
   --normaltxt-1: #888 !important; /* var(--normaltxt-1) */
-  --normaltxt-2: /*[[txt]]*/ !important; /* var(--normaltxt-2) */
-  --hovertxt: /*[[htxt]]*/ !important; /* var(--hovertxt) */
+  --normaltxt-2: #ebebeb !important; /* var(--normaltxt-2) */
+  --hovertxt: #ebebeb !important; /* var(--hovertxt) */
   --transparent: rgba(29, 30, 34, .65) !important; /* var(--transparent) */
 
-  /* Button Settings */
-  --button-bg: /*[[bbg]]*/ !important; /* var(--button-bg) */
-  --button-border: /*[[bborder]]*/ !important; /* var(--button-border) */
-  --button-txt: /*[[btxt]]*/ !important; /* var(--button-txt) */
+  /* Button colors */
+  --button-bg: #1d1e22 !important; /* var(--button-bg) */
+  --button-border: #000102 !important; /* var(--button-border) */
+  --button-txt: #888 !important; /* var(--button-txt) */
   --button-boxshadow: rgba(0, 0, 0, .75) !important; /* var(--button-boxshadow) */
+  --button-hoverbg: #2c2c33 !important; /* var(--button-hoverbg) */
+  --button-hovertxt: #ebebeb !important; /* var(--button-hovertxt) */
 
-  --button-hoverbg: /*[[bhoverbg]]*/ !important; /* var(--button-hoverbg) */
-  --button-hovertxt: /*[[bhovertxt]]*/ !important; /* var(--button-hovertxt) */
-
-  /* Scroll Bar Settings */
-  --scrollbar-color: /*[[scrollbar]]*/ !important; /* var(--scrollbar-color) */
-  --scrollbart-color: /*[[scrollbart]]*/ !important; /* var(--scrollbart-color) */
-
-  /* Link Settings */
-  --link-color: /*[[link]]*/ !important; /* var(--link-color) */
-  --link-hovercolor: /*[[hlink]]*/ !important; /* var(--link-hovercolor) */
+  /* Scroll Bar colors */
+  --scrollbar-color: #333 !important; /* var(--scrollbar-color) */
+  --scrollbart-color: #555 !important; /* var(--scrollbart-color) */
+}
 }
 
-}
-
-@-moz-document url-prefix("https://trakt.tv") {
+@-moz-document regexp("http(s)?://trakt.tv/.*") {
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Globals :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-/*::: Font :::*/
-@font-face{font-family:'Custom';src:url(https://fonts.gstatic.com/s/ubuntu/v9/sDGTilo5QRsfWu6Yc11AXg.woff2)}
-:not(code):not(pre){font-family:'Custom'}
-
-/*:: Thinner/Darker Scroll bar ::*/
+/*::: Thinner/Darker Scroll bar :::*/
 ::-webkit-scrollbar-corner {
   background-color: var(--scrollbar-color);
 }
@@ -117,12 +74,12 @@ VIPN "No" <<<EOT
   background: var(--transparent) !important;
 }
 
-/* Avatar */
+/*::: Avatar :::*/
 [id*="top-nav"] > [class*="nav"] > [class*="hidden-xs"] > [id*="desktop-user-avatar"] > [class*="avatar"] {
   border-radius: 0 !important;
 }
 
-/*:: Logos ::*/
+/*::: Logos :::*/
 div[id="top-brand"] > a > img,
 [class="trakt-full"] > img {
   visibility: hidden !important;
@@ -132,7 +89,7 @@ div[id="top-brand"] {
   width: 65px !important;
   height: 65px !important;
 
-  background: url("https://raw.githubusercontent.com/JourneyOver/My-Userstyles/Cleanup_and_Rewrites/trakt.tv/img/logos/slightly_darkerlight_logo_(65_x_65).png") no-repeat !important;
+  background: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/img/logos/slightly_darkerlight_logo_(65_x_65).png") no-repeat !important;
 }
 
 header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] > [class="bottom"],
@@ -155,10 +112,10 @@ header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] {
   border-bottom: none !important;
   height: 65px !important;
 
-  background: url("https://raw.githubusercontent.com/JourneyOver/My-Userstyles/Cleanup_and_Rewrites/trakt.tv/img/logos/slightly_darkerlight_logo_(65_x_65).png") no-repeat !important;
+  background: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/img/logos/slightly_darkerlight_logo_(65_x_65).png") no-repeat !important;
 }
 
-/*:: Social Buttons ::*/
+/*::: Social Buttons :::*/
 [class*="btn-twitter"],
 [class*="btn-facebook"],
 [class*="btn-google"],
@@ -193,43 +150,27 @@ header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] {
   box-shadow: 1px 1px 5px 1px var(--button-boxshadow) !important;
 }
 
-/*:: Links ::*/
-[class="bottom-wrapper"] > a,
-[class="form-inputs with-icons"] > [class="with-icon"] > a[href*="/auth/password/new"],
-[id="watching-wrapper"] > div > div > div > div > div > div > a,
-[id="watching-wrapper"] > div > div > div > div > h2 > a,
-[id="main-nav"] > [class*="nav"] > li > a,
-footer > [class="links"] > [class="left-side"] > li > a,
-footer > [class="links"] > [class="social"] > a,
-footer > [class="copyright"] > a {
-  color: var(--link-color) !important;
-}
-
-[class="bottom-wrapper"] > a:hover,
-[class="form-inputs with-icons"] > [class="with-icon"] > a[href*="/auth/password/new"]:hover,
-[id="watching-wrapper"] > div > div > div > div > div > div > a:hover,
-[id="watching-wrapper"] > div > a:hover,
-[id="watching-wrapper"] > div > div > div > div > h2 > a:hover,
-[id="main-nav"] > [class*="nav"] > li > a:hover,
-footer > [class="links"] > [class="left-side"] > li > a:hover,
-footer > [class="links"] > [class="social"] > a:hover,
-footer > [class="copyright"] > a:hover {
-  color: var(--link-hovercolor) !important;
-}
-
-/*:: Dark Trakt Version ::*/
+/*::: Trakt Dark Version :::*/
 [class="trakt"]::after {
   white-space: pre;
 
-  content: "\A                  Dark Trakt.tv Ver. 3.0.0";
+  content: "\A                Trakt Dark Ver. 3.0.0";
 }
 
+/*::: Hide Ads :::*/
+/*[[Ads]]*/
+
+/*::: Hide Shop :::*/
+/*[[Shop]]*/
+
+/*::: Hide VIP Stuff :::*/
+/*[[VIP]]*/
 }
 
-@-moz-document url-prefix("https://trakt.tv") {
+@-moz-document regexp("http(s)?://trakt.tv/auth/.*") {
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: JOIN & SIGN IN Page :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-/*:: Auth Form ::*/
+/*::: Auth Form :::*/
 [id="auth-form-wrapper"],
 [class="auth-services-wrapper"],
 [id="auth-form-wrapper"] > [class="bottom-wrapper"],
@@ -242,7 +183,7 @@ footer > [class="copyright"] > a:hover {
   background-color: var(--bg) !important;
 }
 
-/*:: Text Forms ::*/
+/*::: Text Forms :::*/
 [id="auth-form-wrapper"] > [id="new_user"] > div > div > div > div > [id="user_email"],
 [id="auth-form-wrapper"] > [id="new_user"] > div > div > div > div > [id="user_login"],
 [id="auth-form-wrapper"] > [id="new_user"] > div > div > div > div > [id="user_username"],
@@ -254,7 +195,7 @@ footer > [class="copyright"] > a:hover {
   background-color: var(--bg) !important;
 }
 
-/*:: Sign In & Join Trakt Button ::*/
+/*::: Sign In & Join Trakt Button :::*/
 [id="auth-form-wrapper"] > [id="new_user"] > div > [class*="btn-block"] {
   border: 1px solid var(--button-border) !important;
 
@@ -271,25 +212,24 @@ footer > [class="copyright"] > a:hover {
   box-shadow: 1px 1px 5px 1px var(--button-boxshadow) !important;
 }
 
-/*:: Logo ::*/
+/*::: Logo :::*/
 [id="auth-form-wrapper"] > a > [class="logo-wrapper"] > div[class="logo"] {
-  background: url("https://raw.githubusercontent.com/JourneyOver/My-Userstyles/Cleanup_and_Rewrites/trakt.tv/img/logos/dark_logo_(400_x_400).png") no-repeat !important;
+  background: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/img/logos/dark_logo_(400_x_400).png") no-repeat !important;
   background-size: 128px 128px !important;
 }
-
 }
 
-@-moz-document url-prefix("https://trakt.tv") {
+@-moz-document regexp("http(s)?://trakt.tv/welcome/.*") {
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Welcome Page :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-/*:: Avatar Image ::*/
+/*::: Avatar Image :::*/
 [id="watching-wrapper"] > div > div > div > div > div > img,
 [id="watching-wrapper"] > div > div > div > div > [id="avatar-wrapper"] > [class*="dropzone"] {
   border: 2px solid var(--border) !important;
   border-radius: 0 !important;
 }
 
-/*:: Text Forums & Dropdown Menu ::*/
+/*::: Text Forms & Dropdown Menu :::*/
 [id="watching-wrapper"] > div > div > div > div > [id*="edit_user_"] > [class*="form-inputs"],
 [id="watching-wrapper"] > div > div > div > div > [id*="edit_user_"] > div > div > div > div > [class*="form-control"] {
   border: 0 !important;
@@ -298,7 +238,7 @@ footer > [class="copyright"] > a:hover {
   background-color: var(--bg) !important;
 }
 
-/*:: Buttons ::*/
+/*::: Buttons :::*/
 [id="watching-wrapper"] > div > div > div > div > [id*="edit_user_"] > div > [id="profile-next"],
 [class="genre enabled"] > div,
 [id="watching-wrapper"] > div > div > div > div > div > [id="genres-next"],
@@ -326,13 +266,13 @@ footer > [class="copyright"] > a:hover {
   box-shadow: 1px 1px 5px 1px var(--button-boxshadow) !important;
 }
 
-/*:: welcome/3 popup info ::*/
+/*::: welcome/3 popup info :::*/
 [class="shepherd-content"] {
   color: var(--normaltxt-2) !important;
   background-color: var(--bg) !important;
 }
 
-/*:: View more tv shows/movies hover ::*/
+/*::: View more tv shows/movies hover :::*/
 [id="watching-wrapper"] > div > div > div > div > [id="genre-items-shows"] > [class="view-more"]:hover,
 [id="watching-wrapper"] > div > div > div > div > [id="genre-items-movies"] > [class="view-more"]:hover {
   border: var(--border) !important;
@@ -342,13 +282,12 @@ footer > [class="copyright"] > a:hover {
 
   box-shadow: 1px 1px 5px 1px var(--button-boxshadow) !important;
 }
-
 }
 
-@-moz-document url-prefix("https://trakt.tv") {
+@-moz-document regexp("http(s)?://trakt.tv/$"), regexp("http(s)?://trakt.tv/home$") {
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Home Page :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-/*:: Buttons ::*/
+/*::::: Buttons :::*/
 [id="top-nav"] > [class*="navbar-nav"] > li > [class*=btn-primary],
 [id="watching-wrapper"] > div > div > div > div > div > [class*=btn-primary],
 [id="scrobblers-wrapper"] > div > div > div > div > div > [class*=btn-primary],
@@ -373,9 +312,9 @@ footer > [class="copyright"] > a:hover {
   box-shadow: 1px 1px 5px 1px var(--button-boxshadow) !important;
 }
 
-/* Text and Background Images Corrections */
+/*::: Text and Background Images Corrections :::*/
 [id="scrobblers-wrapper"] > [class*="full-screenshot"] {
-  background-image: url("https://raw.githubusercontent.com/JourneyOver/My-Userstyles/Cleanup_and_Rewrites/trakt.tv/img/other/scrobblers-wrapper-image.png") !important;
+  background-image: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/img/other/scrobblers-wrapper-image.png") !important;
   background-size: 100% 100% !important;
 }
 
@@ -402,13 +341,12 @@ footer > [class="copyright"] > a:hover {
 [id="api-wrapper"] > [class="shade"] {
   display: none !important;
 }
-
 }
 
-@-moz-document url-prefix("https://trakt.tv") {
+@-moz-document regexp("http(s)?://trakt.tv/dashboard") {
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Dashboard :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-/* Main Sections */
+/*::: Main Sections :::*/
 [class="user-wrapper"],
 [id="ondeck-wrapper"],
 [id="schedule-wrapper"],
@@ -421,18 +359,4 @@ footer > [class="copyright"] > a:hover {
 footer {
   background-color: var(--bg) !important;
 }
-
-}
-
-@-moz-document url-prefix("https://trakt.tv") {
-
-/*:: Hide Ads ::*/
-/*[[Ads]]*/
-
-/*:: Hide Shop ::*/
-/*[[Shop]]*/
-
-/*:: Hide VIP Stuff ::*/
-/*[[VIP]]*/
-
 }

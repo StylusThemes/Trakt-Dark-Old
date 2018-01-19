@@ -1,4 +1,4 @@
-# Dark Trakt.tv Changelog
+# Trakt Dark Changelog
 
 ## v3.0.0 ... (Unreleased)
 
@@ -21,7 +21,9 @@
 ### Notes
 `*` Code might be a bit messy and some stuff may seem like redudent duplicates to some people, but I split things up a lot more to help me update things when need be
 
-`*` Switched name from Trakt.tv dark to Dark Trakt.tv
+`*` Switched name from Trakt.tv dark to Trakt Dark
+
+`*` Moved style under an org and into it's own repository.
 
 ## v2.4.12 ... (08 JULY 17)
 
