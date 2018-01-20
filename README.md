@@ -7,7 +7,7 @@
 
 ## Description
 
-Dark theme for Trakt.tv - Switch off the lights on Trakt.tv and browse in nighttime mode.
+A dark theme for Trakt - Switch off the lights on Trakt.tv and browse in nighttime mode.
 
 ![Trakt.tv Preview](./img/preview/trakt.preview.jpg?raw=true "Trakt.tv Preview")
 
