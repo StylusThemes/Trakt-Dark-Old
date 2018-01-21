@@ -1,7 +1,7 @@
 {
   "name": "trakt-dark",
   "version": "3.0.0",
-  "description": "A dark theme for Trakt",
+  "description": "Dark Trakt style",
   "devDependencies": {
     "css": "^2.2.1",
     "perfectionist": "^2.4.0",

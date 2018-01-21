@@ -1,4 +1,4 @@
-@-moz-document regexp("http(s)?://trakt.tv/.*") {
+@-moz-document regexp("https?://trakt.tv/.*") {
 /* ++----------------------------------------------------------------------------------++ */
 /* ||                                                                                  || */
 /* ||* Name        : Trakt Dark                                                        || */
@@ -16,7 +16,7 @@
 /* ++----------------------------------------------------------------------------------++ */
 }
 
-@-moz-document regexp("http(s)?://trakt.tv/.*") {
+@-moz-document regexp("https?://trakt.tv/.*") {
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: SETTINGS :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 :root {
@@ -42,7 +42,7 @@
 }
 }
 
-@-moz-document regexp("http(s)?://trakt.tv/.*") {
+@-moz-document regexp("https?://trakt.tv/.*") {
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Globals :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 /*::: Thinner/Darker Scroll bar :::*/
@@ -89,7 +89,7 @@ div[id="top-brand"] {
   width: 65px !important;
   height: 65px !important;
 
-  background: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/img/logos/slightly_darkerlight_logo_(65_x_65).png") no-repeat !important;
+  background: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/images/logos/slightly_darkerlight_logo_(65_x_65).png") no-repeat !important;
 }
 
 header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] > [class="bottom"],
@@ -112,7 +112,7 @@ header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] {
   border-bottom: none !important;
   height: 65px !important;
 
-  background: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/img/logos/slightly_darkerlight_logo_(65_x_65).png") no-repeat !important;
+  background: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/images/logos/slightly_darkerlight_logo_(65_x_65).png") no-repeat !important;
 }
 
 /*::: Social Buttons :::*/
@@ -167,7 +167,7 @@ header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] {
 /*[[VIP]]*/
 }
 
-@-moz-document regexp("http(s)?://trakt.tv/auth/.*") {
+@-moz-document regexp("https?://trakt.tv/auth/.*") {
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: JOIN & SIGN IN Page :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 /*::: Auth Form :::*/
@@ -214,12 +214,12 @@ header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] {
 
 /*::: Logo :::*/
 [id="auth-form-wrapper"] > a > [class="logo-wrapper"] > div[class="logo"] {
-  background: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/img/logos/dark_logo_(400_x_400).png") no-repeat !important;
+  background: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/images/logos/dark_logo_(400_x_400).png") no-repeat !important;
   background-size: 128px 128px !important;
 }
 }
 
-@-moz-document regexp("http(s)?://trakt.tv/welcome/.*") {
+@-moz-document regexp("https?://trakt.tv/welcome/.*") {
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Welcome Page :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 /*::: Avatar Image :::*/
@@ -284,7 +284,7 @@ header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] {
 }
 }
 
-@-moz-document regexp("http(s)?://trakt.tv/$"), regexp("http(s)?://trakt.tv/home$") {
+@-moz-document regexp("https?://trakt.tv/$"), regexp("https?://trakt.tv/home$") {
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Home Page :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 /*::::: Buttons :::*/
@@ -314,7 +314,7 @@ header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] {
 
 /*::: Text and Background Images Corrections :::*/
 [id="scrobblers-wrapper"] > [class*="full-screenshot"] {
-  background-image: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/img/other/scrobblers-wrapper-image.png") !important;
+  background-image: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/images/scrobblers-wrapper-image.png") !important;
   background-size: 100% 100% !important;
 }
 
@@ -343,7 +343,7 @@ header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] {
 }
 }
 
-@-moz-document regexp("http(s)?://trakt.tv/dashboard") {
+@-moz-document regexp("https?://trakt.tv/dashboard") {
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Dashboard :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 /*::: Main Sections :::*/
