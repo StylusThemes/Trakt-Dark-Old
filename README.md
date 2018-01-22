@@ -22,7 +22,7 @@
 
 ## Preview
 
-![](./images/screenshots/Oldtrakt-after.png)
+![](./images/screenshots/Oldtrakt-after.png?raw=true)
 
 ## Installing
 
