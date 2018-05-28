@@ -36,6 +36,16 @@
   --button-hoverbg: #2c2c33 !important; /* var(--button-hoverbg) */
   --button-hovertxt: #ebebeb !important; /* var(--button-hovertxt) */
 
+  /* Various Other Colors */
+  --color-grey: #3A3A3A !important; /* var(--color-grey) */
+  --color-white: #FFFFFF !important; /* var(--color-white) */
+  --color-red: #ED1C24 !important; /* var(--color-red) */
+  --color-dkeppel: #16a085 !important; /* var(--color-dkeppel) */
+  --color-blue: #009edf !important; /* var(--color-blue) */
+  --color-black: #000 !important;             /* var(--color-black) black  */
+  --color-purple: #8e44ad !important;             /* var(--color-purple) purple  */
+  --color-lbgrey: #6e7a83 !important;             /* var(--color-lbgrey) light blue-grey  */
+
   /* Scroll Bar colors */
   --scrollbar-color: #333 !important; /* var(--scrollbar-color) */
   --scrollbart-color: #555 !important; /* var(--scrollbart-color) */
@@ -43,118 +53,32 @@
 }
 
 @-moz-document regexp("https?://trakt.tv/.*") {
-/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Globals :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Main Globals :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 /*::: Thinner/Darker Scroll bar :::*/
 ::-webkit-scrollbar-corner {
-  background-color: var(--scrollbar-color);
+  background-color: var(--scrollbar-color) !important;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 10px !important;
+  height: 10px !important;
 
-  background-color: var(--scrollbar-color);
+  background-color: var(--scrollbar-color) !important;
 }
 
 ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 2px !important;
+  border-radius: 2px !important;
 
-  background: var(--scrollbart-color);
-}
-
-/*::: Navigation Menu :::*/
-.no-touch header#top-nav,
-.no-touch header#top-nav:hover {
-  background: var(--transparent) !important;
-}
-
-[id="user-menu"] {
-  background: var(--transparent) !important;
-}
-
-/*::: Avatar :::*/
-[id*="top-nav"] > [class*="nav"] > [class*="hidden-xs"] > [id*="desktop-user-avatar"] > [class*="avatar"] {
-  border-radius: 0 !important;
-}
-
-/*::: Logos :::*/
-div[id="top-brand"] > a > img,
-[class="trakt-full"] > img {
-  visibility: hidden !important;
-}
-
-div[id="top-brand"] {
-  width: 65px !important;
-  height: 65px !important;
-
-  background: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/images/logos/slightly_darkerlight_logo_(65_x_65).png") no-repeat !important;
-}
-
-header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] > [class="bottom"],
-.no-touch header#top-nav:hover #top-brand .bottom-wrapper .bottom {
-  background: none !important;
-}
-
-header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] {
-  overflow: hidden !important;
-
-  position: static !important;
-  bottom: 0 !important;
-  z-index: -1 !important;
-
-  width: 65px !important;
-  height: 1px !important;
-}
-
-[class="trakt-full"] {
-  border-bottom: none !important;
-  height: 65px !important;
-
-  background: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/images/logos/slightly_darkerlight_logo_(65_x_65).png") no-repeat !important;
-}
-
-/*::: Social Buttons :::*/
-[class*="btn-twitter"],
-[class*="btn-facebook"],
-[class*="btn-google"],
-[class*="btn-tumblr"],
-[class*="btn-medium"],
-[class*="btn-chrome"],
-[class*="btn-slack"],
-[class*="btn-pushover"],
-[class*="btn-pushbullet"],
-#auth-form-wrapper .auth-services .btn.btn-google {
-  border: 1px solid var(--button-border) !important;
-
-  color: var(--button-txt) !important;
-  background: var(--button-bg) !important;
-
-  box-shadow: 1px 1px 5px 1px var(--button-boxshadow) !important;
-}
-
-[class*="btn-twitter"]:hover,
-[class*="btn-facebook"]:hover,
-[class*="btn-google"]:hover,
-[class*="btn-tumblr"]:hover,
-[class*="btn-medium"]:hover,
-[class*="btn-chrome"]:hover,
-[class*="btn-slack"]:hover,
-[class*="btn-pushover"]:hover,
-[class*="btn-pushbullet"]:hover,
-#auth-form-wrapper .auth-services .btn.btn-google:hover {
-  color: var(--button-hovertxt) !important;
-  background: var(--button-hoverbg) !important;
-
-  box-shadow: 1px 1px 5px 1px var(--button-boxshadow) !important;
+  background: var(--scrollbart-color) !important;
 }
 
 /*::: Trakt Dark Version :::*/
 [class="trakt"]::after {
-  white-space: pre;
+  white-space: pre !important;
 
-  content: "\A                Trakt Dark Ver. 3.0.0";
+  content: "\A                Trakt Dark Ver. 3.0.0" !important;
 }
 
 /*[[Ads]]*/
@@ -167,12 +91,10 @@ header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] {
 @-moz-document regexp("https?://trakt.tv/auth/.*") {
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: JOIN & SIGN IN Page :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-/*::: Auth Form :::*/
-[id="auth-form-wrapper"],
-[class="auth-services-wrapper"],
-[id="auth-form-wrapper"] > [class="bottom-wrapper"],
-[id="auth-form-wrapper"] > [id="new_user"] > [id="error-explanation"],
-[id="auth-form-wrapper"] > [id="new_user"] > [id="error_explanation"] {
+/*::: backgrounds & texts :::*/
+#auth-form-wrapper,
+#auth-form-wrapper .auth-services-wrapper,
+#auth-form-wrapper .bottom-wrapper {
   border-top: 0 !important;
   border-radius: 1px !important;
 
@@ -180,37 +102,52 @@ header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] {
   background-color: var(--bg) !important;
 }
 
-/*::: Text Forms :::*/
-[id="auth-form-wrapper"] > [id="new_user"] > div > div > div > div > [id="user_email"],
-[id="auth-form-wrapper"] > [id="new_user"] > div > div > div > div > [id="user_login"],
-[id="auth-form-wrapper"] > [id="new_user"] > div > div > div > div > [id="user_username"],
-[id="auth-form-wrapper"] > [id="new_user"] > div > div > div > div > [id="user_password"],
-[id="auth-form-wrapper"] > [id="new_user"] > div > div > div > div > [id="user_password_confirmation"] {
+/*::: inputs :::*/
+input#user_email.string.email.required.top.form-control,
+input#user_login.string.required.top.form-control,
+input#user_password.password.required.bottom.form-control,
+input#user_password.password.required.middle.form-control,
+input#user_password_confirmation.password.required.bottom.form-control,
+input#user_username.string.required.middle.form-control {
   border: 1px solid var(--border) !important;
 
-  color: var(--normaltxt-2) !important;
+  color: var(--normaltxt-1) !important;
   background-color: var(--bg) !important;
 }
 
-/*::: Sign In & Join Trakt Button :::*/
-[id="auth-form-wrapper"] > [id="new_user"] > div > [class*="btn-block"] {
-  border: 1px solid var(--button-border) !important;
-
-  color: var(--button-txt) !important;
-  background: var(--button-bg) !important;
-
-  box-shadow: 1px 1px 5px 1px var(--button-boxshadow) !important;
+input#user_email.string.email.required.top.form-control::-webkit-input-placeholder,
+input#user_password.password.required.middle.form-control::-webkit-input-placeholder,
+input#user_password_confirmation.password.required.bottom.form-control::-webkit-input-placeholder,
+input#user_username.string.required.middle.form-control::-webkit-input-placeholder {
+  color: var(--normaltxt-1) !important;
 }
 
-[id="auth-form-wrapper"] > [id="new_user"] > div > [class*="btn-block"]:hover {
-  color: var(--button-hovertxt) !important;
-  background: var(--button-hoverbg) !important;
+input#user_email.string.email.required.top.form-control::-moz-placeholder,
+input#user_password.password.required.middle.form-control::-moz-placeholder,
+input#user_password_confirmation.password.required.bottom.form-control::-moz-placeholder,
+input#user_username.string.required.middle.form-control::-moz-placeholder {
+  color: var(--normaltxt-1) !important;
+}
 
-  box-shadow: 1px 1px 5px 1px var(--button-boxshadow) !important;
+input#user_login.string.required.top.form-control::-webkit-input-placeholder,
+input#user_password.password.required.bottom.form-control::-webkit-input-placeholder {
+  color: var(--normaltxt-1) !important;
+}
+
+input#user_login.string.required.top.form-control::-moz-placeholder,
+input#user_password.password.required.bottom.form-control::-moz-placeholder {
+  color: var(--normaltxt-1) !important;
+}
+
+.form-control:focus {
+  border-color: var(--normaltxt-1) !important;
+
+  outline: 0 !important;
+  box-shadow: 0px 0px 4px 1px var(--color-red) !important;
 }
 
 /*::: Logo :::*/
-[id="auth-form-wrapper"] > a > [class="logo-wrapper"] > div[class="logo"] {
+#auth-form-wrapper .logo-wrapper .logo {
   background: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/images/logos/dark_logo_(400_x_400).png") no-repeat !important;
   background-size: 128px 128px !important;
 }
@@ -220,15 +157,16 @@ header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] {
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Welcome Page :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 /*::: Avatar Image :::*/
-[id="watching-wrapper"] > div > div > div > div > div > img,
-[id="watching-wrapper"] > div > div > div > div > [id="avatar-wrapper"] > [class*="dropzone"] {
+body.welcome #avatar-wrapper img.avatar,
+body.welcome #avatar-wrapper .dropzone {
   border: 2px solid var(--border) !important;
   border-radius: 0 !important;
 }
 
 /*::: Text Forms & Dropdown Menu :::*/
-[id="watching-wrapper"] > div > div > div > div > [id*="edit_user_"] > [class*="form-inputs"],
-[id="watching-wrapper"] > div > div > div > div > [id*="edit_user_"] > div > div > div > div > [class*="form-control"] {
+body.welcome .form-inputs,
+body.welcome .form-inputs .form-control,
+body.welcome .form-inputs input[type=text] {
   border: 0 !important;
 
   color: var(--normaltxt-2) !important;
@@ -236,13 +174,8 @@ header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] {
 }
 
 /*::: Buttons :::*/
-[id="watching-wrapper"] > div > div > div > div > [id*="edit_user_"] > div > [id="profile-next"],
-[class="genre enabled"] > div,
-[id="watching-wrapper"] > div > div > div > div > div > [id="genres-next"],
-[id="watching-wrapper"] > div > div > div > [id="actions-next"],
-[id="watching-wrapper"] > div > div > div > [id="sharing-next"],
-[id="watching-wrapper"] > div > div > div > [id="notifications-next"],
-[class*="shepherd-button"] {
+body.welcome .genres .genre.enabled .inner,
+body.welcome .shepherd-element.shepherd-theme-arrows .shepherd-content footer .shepherd-buttons li .shepherd-button {
   border: 1px solid var(--button-border) !important;
 
   color: var(--button-txt) !important;
@@ -251,12 +184,7 @@ header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] {
   box-shadow: 1px 1px 5px 1px var(--button-boxshadow) !important;
 }
 
-[id="watching-wrapper"] > div > div > div > div > [id*="edit_user_"] > div > [id="profile-next"]:hover,
-[id="watching-wrapper"] > div > div > div > div > div > [id="genres-next"]:hover,
-[id="watching-wrapper"] > div > div > div > [id="actions-next"]:hover,
-[id="watching-wrapper"] > div > div > div > [id="sharing-next"]:hover,
-[id="watching-wrapper"] > div > div > div > [id="notifications-next"]:hover,
-[class*="shepherd-button"]:hover {
+body.welcome .shepherd-element.shepherd-theme-arrows .shepherd-content footer .shepherd-buttons li .shepherd-button:hover {
   color: var(--button-hovertxt) !important;
   background: var(--button-hoverbg) !important;
 
@@ -264,14 +192,13 @@ header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] {
 }
 
 /*::: welcome/3 popup info :::*/
-[class="shepherd-content"] {
+body.welcome .shepherd-element.shepherd-theme-arrows .shepherd-content {
   color: var(--normaltxt-2) !important;
   background-color: var(--bg) !important;
 }
 
 /*::: View more tv shows/movies hover :::*/
-[id="watching-wrapper"] > div > div > div > div > [id="genre-items-shows"] > [class="view-more"]:hover,
-[id="watching-wrapper"] > div > div > div > div > [id="genre-items-movies"] > [class="view-more"]:hover {
+body.welcome .view-more:hover {
   border: var(--border) !important;
 
   color: var(--button-hovertxt) !important;
@@ -281,15 +208,116 @@ header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] {
 }
 }
 
-@-moz-document regexp("https?://trakt.tv/$"), regexp("https?://trakt.tv/home$") {
-/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Home Page :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+@-moz-document regexp("https?://trakt.tv/.*") {
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Globals :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-/*::::: Buttons :::*/
-[id="top-nav"] > [class*="navbar-nav"] > li > [class*=btn-primary],
-[id="watching-wrapper"] > div > div > div > div > div > [class*=btn-primary],
-[id="scrobblers-wrapper"] > div > div > div > div > div > [class*=btn-primary],
-[id="apps-wrapper"] > div > div > div > div > div > [class*=btn-primary],
-[id="api-wrapper"] > div > div > div > div > [class*=btn-primary] {
+/*::: Header Search :::*/
+#header-search,
+header#top-nav #header-search #header-search-button.btn-primary {
+  background: var(--bg) !important;
+}
+
+#header-search,
+#header-search:hover,
+header#top-nav #header-search #header-search-button.btn-primary,
+header#top-nav #header-search #header-search-button.btn-primary:hover {
+  border: 1px solid var(--border) !important;
+
+  color: var(--normaltxt-1) !important;
+
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
+header#top-nav #header-search #header-search-query {
+  background: transparent !important;
+}
+
+header#top-nav #header-search #header-search-query.open {
+  color: var(--normaltxt-2) !important;
+  background: transparent !important;
+}
+
+header#top-nav #header-search #header-search-type.shown .dropdown-toggle {
+  border-left: transparent !important;
+
+  color: var(--normaltxt-2) !important;
+  background: transparent !important;
+}
+
+header#top-nav #header-search #header-search-type.shown .dropdown-menu {
+  background: var(--bg) !important;
+}
+
+header#top-nav #header-search #header-search-type a {
+  color: var(--normaltxt-2) !important;
+  background: var(--bg) !important;
+
+  cursor: pointer !important;
+}
+
+header#top-nav #header-search #header-search-type a:hover {
+  color: var(--color-red) !important;
+  background: var(--bg) !important;
+}
+
+/*::: Navigation Menu :::*/
+#user-menu,
+.no-touch header#top-nav,
+.no-touch header#top-nav:hover {
+  background: var(--transparent) !important;
+}
+
+/*::: Navigation AVA :::*/
+header#top-nav .navbar-nav.navbar-right .btn .avatar {
+  border-radius: 0 !important;
+}
+
+/*::: Alert & Toast :::*/
+#toast-container.toast-top-full-width .toast.toast-success,
+.alert {
+  border: 1px solid var(--color-black) !important;
+
+  color: var(--normaltxt-1) !important;
+  background-color: transparent!important;
+}
+/*::: Logo IMG :::*/
+#top-brand img,
+.trakt-full img {
+  visibility: hidden !important;
+}
+
+#top-brand {
+  width: 65px !important;
+  height: 65px !important;
+
+  background: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/images/logos/slightly_darkerlight_logo_(65_x_65).png") no-repeat !important;
+}
+
+.trakt-full {
+  border-bottom: none !important;
+  height: 65px !important;
+
+  background: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/images/logos/lighter_logo_(65_x_65).png") no-repeat !important;
+}
+
+header#top-nav #top-brand .bottom-wrapper .bottom,
+.no-touch header#top-nav:hover #top-brand .bottom-wrapper .bottom {
+  background: none !important;
+}
+
+header#top-nav #top-brand .bottom-wrapper {
+  overflow: hidden !important;
+
+  position: static !important;
+  bottom: 0 !important;
+  z-index: -1 !important;
+
+  width: 65px !important;
+  height: 1px !important;
+}
+
+/*::: Buttons :::*/
+.btn-primary {
   border: 1px solid var(--button-border) !important;
 
   color: var(--button-txt) !important;
@@ -298,62 +326,65 @@ header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] {
   box-shadow: 1px 1px 5px 1px var(--button-boxshadow) !important;
 }
 
-[id="top-nav"] > [class*="navbar-nav"] > li > [class*=btn-primary]:hover,
-[id="watching-wrapper"] > div > div > div > div > div > [class*=btn-primary]:hover,
-[id="scrobblers-wrapper"] > div > div > div > div > div > [class*=btn-primary]:hover,
-[id="apps-wrapper"] > div > div > div > div > div > [class*=btn-primary]:hover,
-[id="api-wrapper"] > div > div > div > div > [class*=btn-primary]:hover {
+.btn-primary:hover {
   color: var(--button-hovertxt) !important;
   background: var(--button-hoverbg) !important;
 
   box-shadow: 1px 1px 5px 1px var(--button-boxshadow) !important;
 }
 
-/*::: Text and Background Images Corrections :::*/
-[id="scrobblers-wrapper"] > [class*="full-screenshot"] {
-  background-image: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/images/scrobblers-wrapper-image.png") !important;
+/*::: Remove Shade :::*/
+#watchnow-wrapper .shade,
+#api-wrapper .shade {
+  display: none !important;
+}
+
+.custom-list .list-info .info .overview[data-readmore][aria-expanded="false"] .shade,
+.subnav-text .text[data-readmore][aria-expanded="false"] .shade {
+  width: 0 !important;
+}
+
+/*::: HP Scrobble & sync
+from your media center. :::*/
+body.main.home #scrobblers-wrapper {
+  height: 0 !important;
+}
+
+body.main.home #watching-wrapper .works-with {
+  margin-bottom: 40px !important;
+}
+
+body.main.home #scrobblers-wrapper .buttons .btn {
+  margin-top: -860px !important;
+  margin-left: 83% !important;
+}
+
+/*::: API Wrapper Top Border :::*/
+#api-wrapper {
+  border-top: none !important;
+}
+
+/*::: Fix size of map-wrapper :::*/
+body.main.home #map-wrapper .container,
+body.main.home #map-wrapper .full-screenshot, body.main.index #map-wrapper .full-screenshot{
   background-size: 100% 100% !important;
 }
 
-[id="watchnow-wrapper"] {
-  background-color: var(--bg) !important;
+/*::: Main Background :::*/
+section:not([id*=bottom-stats-wrapper]) {
+  color: var(--normaltxt-1) !important;
+  background: var(--bg) !important;
 }
 
-[id="api-wrapper"] {
-  border-top: solid 1px var(--border) !important;
-
-  background-color: var(--bg) !important;
-}
-
-[id="scrobblers-wrapper"] > div > div > div > div > h1,
-[id="scrobblers-wrapper"] > div > div > div > div > h2,
-[id="watchnow-wrapper"] > div > div > div > div > h1,
-[id="watchnow-wrapper"] > div > div > div > div > h2,
-[id="api-wrapper"] > div > div > div > h1,
-[id="api-wrapper"] > div > div > div > h2 {
-  color: var(--normaltxt-2) !important;
-}
-
-[id="watchnow-wrapper"] > [class="shade"],
-[id="api-wrapper"] > [class="shade"] {
-  display: none !important;
-}
-}
-
-@-moz-document regexp("https?://trakt.tv/dashboard") {
-/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Dashboard :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-
-/*::: Main Sections :::*/
-[class="user-wrapper"],
-[id="ondeck-wrapper"],
-[id="schedule-wrapper"],
-[id*="huckster-desktop-wrapper"],
-[id="charts-wrapper"],
-[id="activity-wrapper"],
-[id="network-wrapper"],
-[id="recommendations-wrapper"],
-[id="main-search"],
+#main-search,
 footer {
-  background-color: var(--bg) !important;
+  background: var(--bg) !important;
+}
+
+#main-search input.footer-search {
+  border: 1px solid var(--border) !important;;
+
+  color: var(--normaltxt-1) !important;
+  background: transparent !important;
 }
 }
