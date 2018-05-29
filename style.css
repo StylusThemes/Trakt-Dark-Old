@@ -372,7 +372,7 @@ body.main.home #map-wrapper .full-screenshot, body.main.index #map-wrapper .full
 
 /*::: Main Background :::*/
 section:not([id*=bottom-stats-wrapper]) {
-  color: var(--normaltxt-1) !important;
+  color: var(--color-white) !important;
   background: var(--bg) !important;
 }
 
