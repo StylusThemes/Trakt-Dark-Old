@@ -19,8 +19,6 @@
 `+` Made it so style doesn't affect trakt blog pages (might create a addon to the style for trakt blogs in future )
 
 ### Notes
-`*` Code might be a bit messy and some stuff may seem like redudent duplicates to some people, but I split things up a lot more to help me update things when need be
-
 `*` Switched name from Trakt.tv dark to Trakt Dark
 
 `*` Moved style under an org and into it's own repository.

@@ -6,6 +6,7 @@ yarn.lock
 tmp/
 *.tmp
 .bak_files/
+.old/
 
 
 # logs
