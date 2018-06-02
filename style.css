@@ -20,22 +20,20 @@
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: SETTINGS :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 :root {
-  /* Colors */
+  /* Main */
+  --bg: #1d1e22 !important; /* var(--bg) */
+  --altbg: #2c2c33 !important; /* var(--altbg) */
+  --altbg-2: #1b1b1e !important; /* var(--altbg-2) */
   --border: #000102 !important; /* var(--border) */
-  --normaltxt-1: #888 !important; /* var(--normaltxt-1) */
-  --normaltxt-2: #ebebeb !important; /* var(--normaltxt-2) */
   --transparent: rgba(29, 30, 34, .65) !important; /* var(--transparent) */
   --transparent2: rgba(0, 0, 0, .75) !important; /* var(--transparent2) */
   --transparent3: rgba(0, 0, 0, .5) !important; /* var(--transparent3) */
   --transparent4: rgba(0, 0, 0, .10) !important; /* var(--transparent4) */
 
-  /* background colors */
-  --bg: #1d1e22 !important; /* var(--bg) */
-  --altbg: #2c2c33 !important; /* var(--altbg) */
-  --altbg-2: #1b1b1e !important; /* var(--altbg-2) */
-
   /* Various Other Colors */
   --color-grey: #3A3A3A !important; /* var(--color-grey) */
+  --color-lgrey: #ebebeb !important; /* var(--color-lgrey) */
+  --color-rlgrey: #888 !important; /* var(--color-rlgrey) */
   --color-white: #FFF !important; /* var(--color-white) */
   --color-red: #ED1C24 !important; /* var(--color-red) */
   --color-dkeppel: #16a085 !important; /* var(--color-dkeppel) */
@@ -96,7 +94,7 @@
   border-top: 0 !important;
   border-radius: 1px !important;
 
-  color: var(--normaltxt-1) !important;
+  color: var(--color-rlgrey) !important;
   background-color: var(--bg) !important;
 }
 
@@ -109,12 +107,12 @@ input#user_password_confirmation.password.required.bottom.form-control,
 input#user_username.string.required.middle.form-control {
   border: 1px solid var(--border) !important;
 
-  color: var(--normaltxt-1) !important;
+  color: var(--color-rlgrey) !important;
   background-color: var(--altbg) !important;
 }
 
 .form-control:focus {
-  border-color: var(--normaltxt-1) !important;
+  border-color: var(--color-rlgrey) !important;
 
   outline: 0 !important;
   box-shadow: 0 0 4px 1px var(--color-red) !important;
@@ -147,7 +145,7 @@ body.welcome .form-inputs .form-control,
 body.welcome .form-inputs input[type=text] {
   border: 0 !important;
 
-  color: var(--normaltxt-2) !important;
+  color: var(--color-lgrey) !important;
   background-color: var(--bg) !important;
 }
 
@@ -156,7 +154,7 @@ body.welcome .genres .genre.enabled .inner,
 body.welcome .shepherd-element.shepherd-theme-arrows .shepherd-content footer .shepherd-buttons li .shepherd-button {
   border: 1px solid var(--border) !important;
 
-  color: var(--normaltxt-1) !important;
+  color: var(--color-rlgrey) !important;
   background: var(--altbg) !important;
 
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
@@ -164,7 +162,7 @@ body.welcome .shepherd-element.shepherd-theme-arrows .shepherd-content footer .s
 
 body.welcome .genres .genre.enabled .inner:hover,
 body.welcome .shepherd-element.shepherd-theme-arrows .shepherd-content footer .shepherd-buttons li .shepherd-button:hover {
-  color: var(--normaltxt-2) !important;
+  color: var(--color-lgrey) !important;
   background: var(--altbg-2) !important;
 
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
@@ -172,7 +170,7 @@ body.welcome .shepherd-element.shepherd-theme-arrows .shepherd-content footer .s
 
 /*::: welcome/3 popup info :::*/
 body.welcome .shepherd-element.shepherd-theme-arrows .shepherd-content {
-  color: var(--normaltxt-2) !important;
+  color: var(--color-lgrey) !important;
   background-color: var(--bg) !important;
 }
 
@@ -180,7 +178,7 @@ body.welcome .shepherd-element.shepherd-theme-arrows .shepherd-content {
 body.welcome .view-more:hover {
   border: var(--border) !important;
 
-  color: var(--normaltxt-2) !important;
+  color: var(--color-lgrey) !important;
   background: var(--altbg-2) !important;
 
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
@@ -195,7 +193,7 @@ body.welcome .view-more:hover {
 header#top-nav #header-search #header-search-button.btn-primary {
   border: 1px solid var(--border) !important;
 
-  color: var(--normaltxt-2) !important;
+  color: var(--color-lgrey) !important;
   background: var(--bg) !important;
 
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
@@ -205,14 +203,14 @@ header#top-nav #header-search #header-search-button.btn-primary {
 header#top-nav #header-search #header-search-button.btn-primary:hover {
   border: 1px solid var(--border) !important;
 
-  color: var(--normaltxt-2) !important;
+  color: var(--color-lgrey) !important;
   background: var(--transparent3) !important;
 
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 header#top-nav #header-search #header-search-query.open {
-  color: var(--normaltxt-1) !important;
+  color: var(--color-rlgrey) !important;
   background: transparent !important;
 }
 
@@ -223,7 +221,7 @@ header#top-nav #header-search #header-search-query {
 header#top-nav #header-search #header-search-type.shown .dropdown-toggle {
   border-left: transparent !important;
 
-  color: var(--normaltxt-1) !important;
+  color: var(--color-rlgrey) !important;
   background: transparent !important;
 }
 
@@ -232,7 +230,7 @@ header#top-nav #header-search #header-search-type.shown .dropdown-menu {
 }
 
 header#top-nav #header-search #header-search-type a {
-  color: var(--normaltxt-1) !important;
+  color: var(--color-rlgrey) !important;
   background: var(--bg) !important;
 
   cursor: pointer !important;
@@ -260,7 +258,7 @@ header#top-nav .navbar-nav.navbar-right .btn .avatar {
 .alert {
   border: 1px solid var(--color-black) !important;
 
-  color: var(--normaltxt-1) !important;
+  color: var(--color-rlgrey) !important;
   background-color: transparent !important;
 }
 
@@ -304,14 +302,14 @@ header#top-nav #top-brand .bottom-wrapper {
 .btn-primary {
   border: 1px solid var(--border) !important;
 
-  color: var(--normaltxt-1) !important;
+  color: var(--color-rlgrey) !important;
   background: var(--altbg) !important;
 
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .btn-primary:hover {
-  color: var(--normaltxt-2) !important;
+  color: var(--color-lgrey) !important;
   background: var(--altbg-2) !important;
 
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
@@ -356,7 +354,7 @@ from your media center. :::*/
 
 /*::: Main Background :::*/
 section:not([id*=bottom-stats-wrapper]):not([id*=auth-bg-wrapper]) {
-  color: var(--color-white) !important;
+  color: var(--color-lgrey) !important;
   background: var(--bg) !important;
 }
 
@@ -368,13 +366,13 @@ footer {
 #main-search input.footer-search {
   border: 1px solid var(--border) !important;
 
-  color: var(--normaltxt-1) !important;
+  color: var(--color-rlgrey) !important;
   background: transparent !important;
 }
 
 /*::: watchlist/collections/watch Dropdown Menu :::*/
 .quick-icons .actions .popover .popover-title {
-  color: var(--normaltxt-2) !important;
+  color: var(--color-lgrey) !important;
 }
 
 .popover.remove .popover-content,
@@ -389,7 +387,7 @@ footer {
 }
 
 ul.lists li {
-  color: var(--normaltxt-1) !important;
+  color: var(--color-rlgrey) !important;
 }
 
 ul.lists li.selected {
@@ -400,7 +398,7 @@ ul.lists li.selected {
 .popover.remove .popover-content > button.btn-cancel {
   border: 1px solid var(--border) !important;
 
-  color: var(--normaltxt-1) !important;
+  color: var(--color-rlgrey) !important;
   background: var(--bg) !important;
 
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
@@ -410,7 +408,7 @@ ul.lists li.selected {
 .popover.remove .popover-content > button:hover {
   border: 1px solid var(--border) !important;
 
-  color: var(--normaltxt-2) !important;
+  color: var(--color-lgrey) !important;
   background: var(--transparent3) !important;
 
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
@@ -528,18 +526,17 @@ ul.lists li.selected {
 
 /*::: Quick Icons :::*/
 .titles-link h3 {
-  color: var(--normaltxt-1) !important;
+  color: var(--color-lgrey) !important;
 }
 
 h4 .titles-link {
-  color: var(--normaltxt-1) !important;
+  color: var(--color-lgrey) !important;
 }
 
 .quick-icons {
-  margin-top: 2px !important;
-  border-width: 0 !important;
+  border: none !important;
 
-  background-color: var(--altbg) !important;
+  background-color: var(--altbg-2) !important;
 }
 
 .quick-icons .actions a.watch.selected,
