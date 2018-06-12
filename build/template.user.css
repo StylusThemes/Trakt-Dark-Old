@@ -1,33 +1,20 @@
 /* ==UserStyle==
-@name        Trakt Dark
-@version     [[VERSION]]
-@description Dark Trakt style
-@namespace   github.com/StylusThemes
-@author      StylusThemes <https://github.com/StylusThemes>
-@homepageURL https://github.com/StylusThemes/Trakt-Dark
-@supportURL  https://github.com/StylusThemes/Trakt-Dark/issues
-@updateURL   https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/style.user.css
-@license     CC-BY-SA-4.0
+@name           Trakt Dark
+@version        [[VERSION]]
+@namespace      https://github.com/StylusThemes
+@description    A dark theme for Trakt
+@author         StylusThemes <https://github.com/StylusThemes>
+@homepageURL    https://github.com/StylusThemes/Trakt-Dark
+@supportURL     https://github.com/StylusThemes/Trakt-Dark/issues/
+@updateURL      https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/style.user.css
+@license        CC-BY-SA-4.0
+@preprocessor   stylus
 
-@advanced dropdown Ads "Hide Ads?" {
-ADSY "Yes" <<<EOT
-[class*=huckster], [id*=huckster] { display: none !important; } EOT;
-ADSN "No" <<<EOT
- EOT;
-}
+@var checkbox   Ads 'Block ads' 1
+@var checkbox   Shop 'Hide Shop Button?' 1
+@var checkbox   VIP 'Hide VIP Stuff?' 1
 
-@advanced dropdown Shop "Hide Shop Button?" {
-ShopY "Yes" <<<EOT
-[id*="header-shop"], .popover-shop { display: none; } EOT;
-ShopN "No" <<<EOT
- EOT;
-}
-
-@advanced dropdown VIP "Hide VIP Stuff?" {
-VIPY "Yes" <<<EOT
-a[href*="/vip/"], a[href*="/widgets"], a[href*="/year"], a[href*="/forums"], [data-tooltip="RSS Feed"], [data-tooltip="iCal Feed"], [data-tooltip="CSV Export"], [data-tooltip="Notifications"], [data-title="Create a custom calendar"], [data-title="Clone into your account"], body.signed-in #progress-wrapper h3 .reset { display: none !important; } EOT;
-VIPN "No" <<<EOT
- EOT;
-}
+@var select     Pheader 'Profile header' ["PHN:No", "PHY:Yes"]
+@var text       URL 'Profile header BG URL - Requires quotes' ''https://example.com/example.png''
 ==/UserStyle== */
 /* DO NOT EDIT THIS USERCSS - IT IS GENERATED AUTOMATICALLY */

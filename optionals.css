@@ -29,3 +29,14 @@ a[href*="/forums"],
 [data-title="Clone into your account"] {
   display: none !important;
 }
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::: Pheader ::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+/*::: Profile Header :::*/
+#cover-wrapper .full-bg {
+  background-image: url("/*[[url]]*/") !important;
+}
+
+#cover-wrapper #backdrop-info {
+  display: none !important;
+}
