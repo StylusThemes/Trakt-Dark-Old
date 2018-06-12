@@ -289,6 +289,38 @@ header#top-nav #top-brand .bottom-wrapper {
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
+/*::: Social Buttons :::*/
+[class*="btn-twitter"],
+[class*="btn-facebook"],
+[class*="btn-google"],
+[class*="btn-tumblr"],
+[class*="btn-medium"],
+[class*="btn-chrome"],
+[class*="btn-slack"],
+[class*="btn-pushover"],
+[class*="btn-pushbullet"],
+#auth-form-wrapper .auth-services .btn.btn-google {
+  border: 1px solid var(--border) !important;
+  color: var(--color-rlgrey) !important;
+  background: var(--altbg) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
+[class*="btn-twitter"]:hover,
+[class*="btn-facebook"]:hover,
+[class*="btn-google"]:hover,
+[class*="btn-tumblr"]:hover,
+[class*="btn-medium"]:hover,
+[class*="btn-chrome"]:hover,
+[class*="btn-slack"]:hover,
+[class*="btn-pushover"]:hover,
+[class*="btn-pushbullet"]:hover,
+#auth-form-wrapper .auth-services .btn.btn-google:hover {
+  color: var(--color-lgrey) !important;
+  background: var(--altbg-2) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
 /*::: Remove Shade :::*/
 #watchnow-wrapper .shade,
 #api-wrapper .shade {
@@ -540,6 +572,8 @@ h4 .titles-link {
   color: var(--color-white) !important;
 }
 
+/*::: Profile :::*/
+
 /*[[Pheader]]*/
 
 #cover-wrapper .shadow {
@@ -555,5 +589,145 @@ h4 .titles-link {
 #cover-wrapper #backdrop-info a,
 #cover-wrapper #backdrop-info a .year {
   color: var(--color-white) !important;
+}
+
+/*::: Links Wrapper :::*/
+#links-wrapper {
+  background: var(--transparent) !important;
+}
+
+/*::: All Types/All Ratings/Recently Rated/Watched,
+  Recently Watched/Recently Collected/Personal Lists,
+  Rank/Comments/Recently Added dropdowns/Friends :::*/
+.btn-default {
+  border: 1px solid var(--border) !important;
+  color: var(--color-grey) !important;
+  background: var(--transparent3) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
+.dropdown .btn-default {
+  border: 1px solid var(--border) !important;
+  color: var(--color-white) !important;
+  background: var(--bg) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
+.btn-default.active,
+.btn-default:active,
+.btn-default:focus,
+.dropdown .btn-default:hover,
+.open > .btn-default.dropdown-toggle {
+  border: 1px solid var(--border) !important;
+  color: var(--color-lgrey) !important;
+  background: var(--transparent3) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
+.dropdown-menu,
+.dropdown-menu > li > a {
+  color: var(--color-lgrey) !important;
+  background: var(--bg) !important;
+}
+
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+  color: var(--color-white) !important;
+  background: var(--color-grey) !important;
+}
+
+/*::: Items/Plays/Watched/TLTW/Shows/lists/comments/People Count :::*/
+.above-comment {
+  background-color: transparent !important;
+}
+
+.comment-wrapper {
+  border-width: 0 !important;
+  background-color: transparent !important;
+}
+
+.new-comment-wrapper textarea {
+  background-color: rgb(42, 44, 49) !important;
+}
+
+.new-comment-wrapper .formatting-help {
+  background-color: transparent !important;
+}
+
+#main-comment .interactions,
+.comment-wrapper .interactions {
+  font-size: 13px !important;
+}
+
+.comment-wrapper.wider .above-comment .interactions a {
+  margin: 15px !important;
+  color: var(--color-lgrey);
+}
+
+/*::: Page numbers :::*/
+.pagination li a {
+  color: var(--color-rlgrey) !important;
+  background-color: transparent !important;
+}
+
+.pagination li a:hover {
+  color: var(--color-lgrey) !important;
+  background-color: transparent !important;
+}
+
+/*::: Comments :::*/
+
+/*::: Thumbs Up Button :::*/
+.comment-wrapper .above-comment .selected {
+  color: var(--color-rlgrey) !important;
+}
+
+/*::: Date and Time :::*/
+.comment-wrapper .above-comment .date {
+  font-family: "Proxima Nova" !important;
+  color: var(--color-white) !important;
+}
+
+/*::: Add Comment :::*/
+.new-comment-focus.main {
+  font-size: 13px !important;
+  color: var(--color-rlgrey) !important;
+}
+
+.new-comment-focus.main:hover {
+  font-size: 13px !important;
+  color: var(--color-white) !important;
+}
+
+/*::: reply Box :::*/
+.new-reply-wrapper .reply-field textarea {
+  border: solid 1px var(--border) !important;
+  background-color: var(--bg) !important;
+}
+
+.new-reply-wrapper .buttons .comment-submit {
+  border: 1px solid var(--border) !important;
+  color: var(--color-lgrey) !important;
+  background: var(--bg) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
+.new-reply-wrapper .buttons .comment-submit:active,
+.new-reply-wrapper .buttons .comment-submit:hover {
+  border: 1px solid var(--border) !important;
+  color: var(--color-white) !important;
+  background: var(--transparent3) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
+/*::: highlight/code :::*/
+.comment-wrapper .comment mark {
+  border: 1px solid var(--color-black) !important;
+  color: var(--color-black);
+}
+
+.comment-wrapper .comment code {
+  border: 1px solid var(--color-black) !important;
+  background-color: var(--bg);
 }
 }
