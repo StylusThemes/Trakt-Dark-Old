@@ -370,6 +370,10 @@ footer {
   background: var(--bg) !important;
 }
 
+#main-search .inner {
+  background: none !important;
+}
+
 #main-search input.footer-search {
   border: 1px solid var(--border) !important;
   color: var(--color-rlgrey) !important;
