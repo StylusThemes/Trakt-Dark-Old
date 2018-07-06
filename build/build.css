@@ -607,7 +607,7 @@ if Pheader == 'PHY' {
 #cover-wrapper #backdrop-info {
   display: none !important;
 }
-} else if Pheader == 'PHN' {}
+}
 
 #cover-wrapper .shadow {
   display: none !important;
