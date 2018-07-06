@@ -84,6 +84,7 @@ a[href*="/vip/"],
 a[href*="/widgets"],
 a[href*="/year"],
 a[href*="/forums"],
+a[class*="dark-knight"],
 [data-tooltip="RSS Feed"],
 [data-tooltip="iCal Feed"],
 [data-tooltip="CSV Export"],
@@ -91,6 +92,11 @@ a[href*="/forums"],
 [data-title="Create a custom calendar"],
 [data-title="Clone into your account"] {
   display: none !important;
+}
+
+#user-menu ul li.separator {
+  margin-top: -3px !important;
+  border-top: 0 !important;
 }
 }
 }
