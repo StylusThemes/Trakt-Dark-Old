@@ -32,8 +32,23 @@ a[class*="dark-knight"],
 }
 
 #user-menu ul li.separator {
-  margin-top: -3px !important;
-  border-top: 0 !important;
+  margin-top: -1px !important;
+}
+
+div[id*=user-menu] > ul > li > a[href*="/settings"] {
+  margin-top: 2px !important;
+}
+
+div[id*=user-menu] > ul > li > a[href*="/network"] {
+  margin-bottom: 2px !important;
+}
+
+[class*="trakt-icon-backward"] {
+  display: none !important;
+}
+
+#progress-wrapper > div > div > div > h3 > a.ignore {
+  margin-left: 0px !important;
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::: Pheader ::::::::::::::::::::::::::::::::::::::::::::::::*/
