@@ -2,7 +2,7 @@
 
 <p align="center">A dark theme for trakt<p>
 <p align="center"> Your eyes will :heart: you. <p>
-<h4 align="center">This re-write is currently DEAD! If you would like a dark theme for trakt I suggest [Darkt][24] by iFelix18.</h4>
+<h4 align="center">This re-write is currently DEAD! If you would like a dark theme for trakt I suggest https://github.com/iFelix18/Darkt by iFelix18.</h4>
 
 [![Preview][preview]][23]
 
@@ -59,4 +59,3 @@ If you would like to contribute to this repository, please...
 [22]: ./.github/CONTRIBUTING.md
 [preview]: ./images/screenshots/Oldtrakt-after.png?raw=true
 [23]: README.md#screenshot
-[24]: https://github.com/iFelix18/Darkt
