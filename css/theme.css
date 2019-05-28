@@ -210,7 +210,7 @@
   #schedule-wrapper,
   #network-wrapper,
   #recommendations-wrapper {
-    background-color: #1d1e22 !important;
+    background-color: #1d1e22;
   }
   body {
     color: #fff !important;
