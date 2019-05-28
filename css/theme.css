@@ -1,64 +1,21 @@
-/* ==UserStyle==
-@name         Trakt Dark
-@version      3.0.0
-@description  A dark theme for Trakt
-@namespace    https://github.com/StylusThemes
-@author       StylusThemes <https://github.com/StylusThemes>
-@homepageURL  https://github.com/StylusThemes/Trakt-Dark
-@supportURL   https://github.com/StylusThemes/Trakt-Dark/issues/
-@updateURL    https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/style.user.css
-@license      CC-BY-SA-4.0
-
-@advanced dropdown Ads "Hide Ads?" {
-ADSY "Yes" <<<EOT
-[class*=huckster],[id*=huckster]{display:none!important} EOT;
-ADSN "No" <<<EOT
- EOT;
-}
-
-@advanced dropdown Shop "Hide Shop Button?" {
-ShopY "Yes" <<<EOT
-.popover-shop,[id*=header-shop]{display:none} EOT;
-ShopN "No" <<<EOT
- EOT;
-}
-
-@advanced dropdown VIP "Hide VIP Stuff?" {
-VIPN "No" <<<EOT
- EOT;
-VIPY "Yes" <<<EOT
-[data-title="Clone into your account"],[data-title="Create a custom calendar"],[data-tooltip="CSV Export"],[data-tooltip="RSS Feed"],[data-tooltip="iCal Feed"],[data-tooltip=Notifications],a[class*=dark-knight],a[href*="/forums"],a[href*="/vip/"],a[href*="/widgets"],a[href*="/year"]{display:none!important}#user-menu ul li.separator{margin-top:-1px!important}div[id*=user-menu]>ul>li>a[href*="/settings"]{margin-top:2px!important}div[id*=user-menu]>ul>li>a[href*="/network"]{margin-bottom:2px!important}[class*=trakt-icon-backward]{display:none!important}#progress-wrapper>div>div>div>h3>a.ignore{margin-left:0!important} EOT;
-}
-
-@advanced dropdown WATCHNOW "Hide watch Now?" {
-WnN "No" <<<EOT
- EOT;
-WnY "Yes" <<<EOT
-#info-wrapper .sidebar .streaming-links,.action-buttons .streaming-links,.advanced-filters .advanced-watch-now,.btn-get-tickets,.btn-watch-now,.quick-icons .watch-now{display:none!important} EOT;
-}
-==/UserStyle== */
 @-moz-document regexp("https?://trakt.tv/.*") {
-
   /*::: Trakt Dark Version :::*/
   [class="trakt"]::after {
     white-space: pre !important;
     content: "\A                Trakt Dark Ver. 3.0.0" !important;
   }
-
   /*::: Alerts & Toasts :::*/
   #toast-container.toast-top-full-width .toast.toast-success {
     border: 1px solid #000 !important;
     color: #888 !important;
     background-color: rgba(29, 30, 34, 0.65) !important;
   }
-
   .alert,
   .alert-no-data {
     border: 1px solid #000 !important;
     color: #888 !important;
     background-color: rgba(29, 30, 34, 0.65) !important;
   }
-
   /*::: backgrounds & texts :::*/
   #auth-form-wrapper {
     border-top: 0 !important;
@@ -66,21 +23,18 @@ WnY "Yes" <<<EOT
     color: #888 !important;
     background-color: #1d1e22 !important;
   }
-
   #auth-form-wrapper .auth-services-wrapper {
     border-top: 0 !important;
     border-radius: 1px !important;
     color: #888 !important;
     background-color: #1d1e22 !important;
   }
-
   #auth-form-wrapper .bottom-wrapper {
     border-top: 0 !important;
     border-radius: 1px !important;
     color: #888 !important;
     background-color: #1d1e22 !important;
   }
-
   /*::: inputs :::*/
   input#user_email.string.email.required.top.form-control,
   input#user_login.string.required.top.form-control,
@@ -92,44 +46,36 @@ WnY "Yes" <<<EOT
     color: #888 !important;
     background-color: #2c2c33 !important;
   }
-
   .form-control:focus {
     border-color: #888 !important;
     outline: 0 !important;
     box-shadow: 0 0 4px 1px #ed1c24 !important;
   }
-
   :focus {
     outline: 0 !important;
   }
-
   /*::: JOIN & SIGN IN Page Logo :::*/
   #auth-form-wrapper .logo-wrapper .logo {
     background: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/images/logos/dark_logo_(1000x1000).png") no-repeat !important;
     background-size: 128px 128px !important;
   }
-
   /*::: Main Global Logo IMG :::*/
   #top-brand {
     width: 65px !important;
     height: 65px !important;
     background: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/images/logos/grey_logo_(65x65).png") no-repeat !important;
   }
-
   #top-brand img {
     visibility: hidden !important;
   }
-
   .trakt-full {
     border-bottom: none !important;
     height: 65px !important;
     background: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/images/logos/light_grey_logo_(65x65)") no-repeat !important;
   }
-
   .trakt-full img {
     visibility: hidden !important;
   }
-
   header#top-nav #top-brand .bottom-wrapper {
     overflow: hidden !important;
     position: static !important;
@@ -138,15 +84,12 @@ WnY "Yes" <<<EOT
     width: 65px !important;
     height: 1px !important;
   }
-
   header#top-nav #top-brand .bottom-wrapper .bottom {
     background: none !important;
   }
-
   .no-touch header#top-nav:hover #top-brand .bottom-wrapper .bottom {
     background: none !important;
   }
-
   /*::: Header Search :::*/
   #header-search {
     border: 1px solid #000102 !important;
@@ -154,75 +97,62 @@ WnY "Yes" <<<EOT
     background: #1d1e22 !important;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75) !important;
   }
-
   #header-search:hover {
     border: 1px solid #000102 !important;
     color: #ebebeb !important;
     background: rgba(0, 0, 0, 0.5) !important;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75) !important;
   }
-
   header#top-nav #header-search #header-search-button.btn-primary {
     border: 1px solid #000102 !important;
     color: #ebebeb !important;
     background: #1d1e22 !important;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75) !important;
   }
-
   header#top-nav #header-search #header-search-button.btn-primary:hover {
     border: 1px solid #000102 !important;
     color: #ebebeb !important;
     background: rgba(0, 0, 0, 0.5) !important;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75) !important;
   }
-
   header#top-nav #header-search #header-search-query.open {
     color: #888 !important;
     background: #1d1d1d !important;
   }
-
   header#top-nav #header-search #header-search-query {
     color: #888 !important;
     background: #1d1d1d !important;
   }
-
   header#top-nav #header-search #header-search-type.shown .dropdown-toggle {
     border-left: transparent !important;
     color: #888 !important;
     background: #1d1d1d !important;
   }
-
   header#top-nav #header-search #header-search-type.shown .dropdown-menu {
     background: #1d1e22 !important;
   }
-
   header#top-nav #header-search #header-search-type a {
     color: #888 !important;
     background: #1d1e22 !important;
     cursor: pointer !important;
   }
-
   header#top-nav #header-search #header-search-type a:hover {
     color: #ed1c24 !important;
     background: #1d1e22 !important;
   }
-
   /*::: Thinner/Darker Scroll bar :::*/
   ::-webkit-scrollbar-corner {
     background-color: #333 !important;
   }
-
   ::-webkit-scrollbar {
     width: 10px !important;
     height: 10px !important;
     background-color: #333 !important;
   }
-
   ::-webkit-scrollbar-thumb {
     border-radius: 2px !important;
     background: #555 !important;
   }
-
   section,
   #ondeck-wrapper,
   #schedule-wrapper,
@@ -230,15 +160,12 @@ WnY "Yes" <<<EOT
   #recommendations-wrapper {
     background-color: #1d1e22 !important;
   }
-
   body {
     color: #ebebeb !important;
   }
-
   .grid-item .titles-link {
     color: #ebebeb !important;
   }
-
   /*[[Ads]]*/
   /*[[Shop]]*/
   /*[[VIP]]*/

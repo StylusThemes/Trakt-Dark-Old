@@ -1,0 +1,34 @@
+/*::: Hide VIP :::*/
+a[href*="/vip/"],
+a[href*="/widgets"],
+a[href*="/year"],
+a[href*="/forums"],
+a[class*="dark-knight"],
+[data-tooltip="RSS Feed"],
+[data-tooltip="iCal Feed"],
+[data-tooltip="CSV Export"],
+[data-tooltip="Notifications"],
+[data-title="Create a custom calendar"],
+[data-title="Clone into your account"] {
+  display: none !important;
+}
+
+#user-menu ul li.separator {
+  margin-top: -1px !important;
+}
+
+div[id*=user-menu] > ul > li > a[href*="/settings"] {
+  margin-top: 2px !important;
+}
+
+div[id*=user-menu] > ul > li > a[href*="/network"] {
+  margin-bottom: 2px !important;
+}
+
+[class*="trakt-icon-backward"] {
+  display: none !important;
+}
+
+#progress-wrapper > div > div > div > h3 > a.ignore {
+  margin-left: 0px !important;
+}

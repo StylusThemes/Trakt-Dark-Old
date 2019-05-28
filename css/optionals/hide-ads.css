@@ -1,0 +1,5 @@
+/*::: Hide Ads :::*/
+[class*="huckster"],
+[id*="huckster"] {
+  display: none !important;
+}

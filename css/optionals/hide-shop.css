@@ -1,0 +1,5 @@
+/*::: Hide Shop :::*/
+[id*="header-shop"],
+.popover-shop {
+  display: none;
+}
