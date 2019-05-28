@@ -7,6 +7,7 @@ tmp/
 *.tmp
 .bak_files/
 css/src/*.css
+backup
 
 # logs
 *.stackdump

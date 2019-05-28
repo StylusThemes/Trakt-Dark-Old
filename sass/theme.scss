@@ -3,11 +3,16 @@
 //theme
 @-moz-document regexp("https?://trakt.tv/.*") {
 @import 'partials/version';
-@import 'partials/theme/alerts';
+@import 'partials/theme/actor-tooltip';
+@import 'partials/theme/alert';
 @import 'partials/theme/auth';
+@import 'partials/theme/footer-search';
+@import 'partials/theme/footer';
 @import 'partials/theme/logo';
-@import 'partials/theme/nav-search';
+@import 'partials/theme/navbar-search';
+@import 'partials/theme/navbar-user-menu';
 @import 'partials/theme/navbar';
+@import 'partials/theme/network-wrapper';
 @import 'partials/theme/scrollbar';
 @import 'partials/theme/section';
 @import 'partials/theme/text';
@@ -15,4 +20,6 @@
 /*[[Shop]]*/
 /*[[VIP]]*/
 /*[[WATCHNOW]]*/
+/*[[SEARCHFOOTER]]*/
+/*[[LASTWATCHEDBG]]*/
 }

@@ -1,7 +1,7 @@
-/*::: Trakt Dark Version :::*/
+// Trakt Dark Version
 [class="trakt"] {
-	&::after {
-		white-space: pre !important;
-		content: "\A                Trakt Dark Ver. 3.0.0" !important;
-	}
+  &::after {
+    white-space: pre !important;
+    content: "\A                Trakt Dark Ver. 3.0.0" !important;
+  }
 }

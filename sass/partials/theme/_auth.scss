@@ -1,26 +1,26 @@
-/*::: backgrounds & texts :::*/
+// backgrounds & texts
 #auth-form-wrapper {
   border-top: 0 !important;
   border-radius: 1px !important;
-  color: $lightgrey2 !important;
-  background-color: $bg !important;
+  color: $grey !important;
+  background-color: $altbg2 !important;
 
   .auth-services-wrapper {
     border-top: 0 !important;
     border-radius: 1px !important;
-    color: $lightgrey2!important;
-    background-color: $bg !important;
+    color: $grey !important;
+    background-color: $altbg2 !important;
   }
 
   .bottom-wrapper {
     border-top: 0 !important;
     border-radius: 1px !important;
-    color: $lightgrey2 !important;
-    background-color: $bg !important;
+    color: $grey !important;
+    background-color: $altbg2 !important;
   }
 }
 
-/*::: inputs :::*/
+// inputs
 input#user_email.string.email.required.top.form-control,
 input#user_login.string.required.top.form-control,
 input#user_password.password.required.bottom.form-control,
@@ -28,13 +28,13 @@ input#user_password.password.required.middle.form-control,
 input#user_password_confirmation.password.required.bottom.form-control,
 input#user_username.string.required.middle.form-control {
   border: 1px solid $border !important;
-  color: $lightgrey2 !important;
+  color: $grey !important;
   background-color: $altbg !important;
 }
 
 .form-control {
   &:focus {
-    border-color: $lightgrey2 !important;
+    border-color: $grey !important;
     outline: 0 !important;
     box-shadow: 0 0 4px 1px $red !important;
   }
