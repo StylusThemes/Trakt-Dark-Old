@@ -35,7 +35,9 @@ gulp.task( 'usercss', function () {
       '{{hide-ads}}': './css/optionals/minified/hide-ads.css',
       '{{hide-shop}}': './css/optionals/minified/hide-shop.css',
       '{{hide-vip}}': './css/optionals/minified/hide-vip.css',
-      '{{hide-watch-now}}': './css/optionals/minified/hide-watch-now.css'
+      '{{hide-watch-now}}': './css/optionals/minified/hide-watch-now.css',
+      '{{hide-search-footer}}': './css/optionals/minified/hide-search-footer.css',
+      '{{last-watched-bg}}': './css/optionals/minified/last-watched-bg.css'
     } ) )
     .pipe( rename( 'style.user.css' ) )
     .pipe( beautify.css( {

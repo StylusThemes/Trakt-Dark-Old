@@ -36,5 +36,21 @@ WnN "No" <<<EOT
 WnY "Yes" <<<EOT
 {{hide-watch-now}} EOT;
 }
+
+@advanced dropdown SEARCHFOOTER "Hide search footer?" {
+SFN "No" <<<EOT
+ EOT;
+SFY "Yes" <<<EOT
+{{hide-search-footer}} EOT;
+}
+
+@advanced text USERID "UserID [see my GitHub for info]" ""
+
+@advanced dropdown LASTWATCHEDBG "\"Last Watched\" background on user profile [UserID required]" {
+LWBGN "No" <<<EOT
+ EOT;
+LWBGY "Yes" <<<EOT
+{{last-watched-bg}} EOT;
+}
 ==/UserStyle== */
 {{theme}}

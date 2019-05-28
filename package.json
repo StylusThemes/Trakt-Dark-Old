@@ -26,6 +26,6 @@
   },
   "scripts": {
     "update": "updates -cu && npm install",
-    "usercss": "gulp default"
+    "start": "gulp default"
   }
 }

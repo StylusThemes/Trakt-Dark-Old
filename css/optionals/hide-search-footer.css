@@ -1,0 +1,4 @@
+/*::: Hide search footer :::*/
+#main-search {
+  display: none !important;
+}
