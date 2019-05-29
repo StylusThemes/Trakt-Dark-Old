@@ -45,12 +45,15 @@ SFY "Yes" <<<EOT
 }
 
 @advanced text USERID "UserID [see my GitHub for info]" ""
+@advanced text IMGURL "Custom imgURL" ""
 
-@advanced dropdown LASTWATCHEDBG "\"Last Watched\" background on user profile [UserID required]" {
-LWBGN "No" <<<EOT
+@advanced dropdown PROFILEBACKGROUND "Profile Background" {
+PFBGN "Default Background" <<<EOT
  EOT;
-LWBGY "Yes" <<<EOT
+PFBGY "Last Watched [requires UserID]" <<<EOT
 {{last-watched-bg}} EOT;
+PFBGC "Custom [requires Custom imgURL]" <<<EOT
+{{custom-bg}} EOT;
 }
 ==/UserStyle== */
 {{theme}}

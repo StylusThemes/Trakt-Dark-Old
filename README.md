@@ -20,6 +20,32 @@
 
 3. Done! From now on it will automatically update.
 
+### Options:
+
+- **Hide Ads**:</br>
+   If activated, hides all advertising on the site.
+- **Hide Shop Button**:</br>
+   If activated, hides the shop button next to the search in the navigation bar.
+- **Hide VIP**:</br>
+   If activated, hides all VIP options on the site other than the VIP link in the navigation bar.
+- **Hide Watch Now**:</br>
+   If activated, hide the _"Watch Now"_ buttons, and the various sources for films and series.
+- **Hide Search Footer**:</br>
+   If activated, hide the bottom search bar.
+- **UserID**:</br>
+  1. Go [here][13]
+  2. You will see a code similar to this one:
+     ```html
+     <a target="_blank" href="https://trakt.tv/users/journey-over"><img width="500" height="40" alt="Journey Over" src="https://widgets.trakt.tv/users/3bc1e6fe37f69149bbe90a449447a44c/watched/thin@2x.jpg" /></a>
+     ```
+  3. Copy the code after `https://widgets.trakt.tv/users/`, in the example above: `3bc1e6fe37f69149bbe90a449447a44c`
+  4. Paste this code into the theme settings on Stylus.
+  5. Done!
+- **Profile Background**:</br>
+  - If Default is activated, shows the [default user image][14] as the background of the profile.
+  - If Last Watched is activated, shows the last movie or series watched as the background of the profile. `User ID` is required to work correctly.
+  - If Custom is activated, shows a custom picture of your choosing as the background of the profile. `Custom imgURL` is required to work correctly.
+
 ## Contributions
 
 If you would like to contribute to this repository, please...
@@ -77,3 +103,9 @@ If you would like to contribute to this repository, please...
 
 <!-- INSTALL Trakt Dark BADGE -->
 [Trakt Dark]: https://flat.badgen.net/badge/Trakt%20Dark/install/00ADAD "WIP!"
+
+<!-- HOW TO LINK -->
+[13]: https://trakt.tv/widgets/watched
+
+<!-- PROFILE DEFAULT IMAGE -->
+[14]: https://trakt.tv/assets/users/bg-388ebd4e59030af56fcac6b9ec383ee6.jpg
