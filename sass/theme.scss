@@ -1,8 +1,6 @@
 @import 'partials/variables';
-
-//theme
-@-moz-document regexp("https?://trakt.tv/.*") {
 @import 'partials/version';
+//theme
 @import 'partials/theme/actor-tooltip';
 @import 'partials/theme/alert';
 @import 'partials/theme/auth';
@@ -16,10 +14,3 @@
 @import 'partials/theme/scrollbar';
 @import 'partials/theme/section';
 @import 'partials/theme/text';
-/*[[Ads]]*/
-/*[[Shop]]*/
-/*[[VIP]]*/
-/*[[WATCHNOW]]*/
-/*[[SEARCHFOOTER]]*/
-/*[[PROFILEBACKGROUND]]*/
-}

@@ -56,4 +56,12 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
 {{custom-bg}} EOT;
 }
 ==/UserStyle== */
+@-moz-document regexp("https?://trakt.tv/.*") {
 {{theme}}
+/*[[Ads]]*/
+/*[[Shop]]*/
+/*[[VIP]]*/
+/*[[WATCHNOW]]*/
+/*[[SEARCHFOOTER]]*/
+/*[[PROFILEBACKGROUND]]*/
+}

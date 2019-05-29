@@ -25,20 +25,23 @@ gulp.task( 'autoprefix', function () {
 gulp.task( 'minify-css', function () {
   return gulp.src( './css/optionals/*.css' )
     .pipe( cleanCSS() )
-    .pipe( gulp.dest( './css/optionals/minified' ) )
+    .pipe( rename( {
+      suffix: '.min'
+    } ) )
+    .pipe( gulp.dest( './css/optionals/min' ) )
 } );
 
 gulp.task( 'usercss', function () {
   return gulp.src( './css/usercss-template.css' )
     .pipe( insert( {
       '{{theme}}': './css/theme.css',
-      '{{hide-ads}}': './css/optionals/minified/hide-ads.css',
-      '{{hide-shop}}': './css/optionals/minified/hide-shop.css',
-      '{{hide-vip}}': './css/optionals/minified/hide-vip.css',
-      '{{hide-watch-now}}': './css/optionals/minified/hide-watch-now.css',
-      '{{hide-search-footer}}': './css/optionals/minified/hide-search-footer.css',
-      '{{last-watched-bg}}': './css/optionals/minified/last-watched-bg.css',
-      '{{custom-bg}}': './css/optionals/minified/custom-bg.css'
+      '{{hide-ads}}': './css/optionals/min/hide-ads.min.css',
+      '{{hide-shop}}': './css/optionals/min/hide-shop.min.css',
+      '{{hide-vip}}': './css/optionals/min/hide-vip.min.css',
+      '{{hide-watch-now}}': './css/optionals/min/hide-watch-now.min.css',
+      '{{hide-search-footer}}': './css/optionals/min/hide-search-footer.min.css',
+      '{{last-watched-bg}}': './css/optionals/min/last-watched-bg.min.css',
+      '{{custom-bg}}': './css/optionals/min/custom-bg.min.css'
     } ) )
     .pipe( rename( 'style.user.css' ) )
     .pipe( beautify.css( {
