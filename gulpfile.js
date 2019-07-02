@@ -11,15 +11,17 @@ let sass = require( 'gulp-sass' )
 sass.compiler = require( 'node-sass' )
 
 gulp.task( 'autoprefix', function () {
-  return gulp.src( './css/theme.css' )
+  return gulp.src( './css/theme/*.css' )
     .pipe( autoprefixer( {
-      browsers: [
+      overrideBrowserslist: [
         '> 0.2%',
-        'last 2 versions'
+        'last 2 versions',
+        'maintained node versions',
+        'not dead'
       ],
       cascade: false
     } ) )
-    .pipe( gulp.dest( './css' ) )
+    .pipe( gulp.dest( './css/theme' ) )
 } )
 
 gulp.task( 'minify-css', function () {
@@ -34,7 +36,7 @@ gulp.task( 'minify-css', function () {
 gulp.task( 'usercss', function () {
   return gulp.src( './css/usercss-template.css' )
     .pipe( insert( {
-      '{{theme}}': './css/theme.css',
+      '{{theme}}': './css/theme/theme.css',
       '{{hide-ads}}': './css/optionals/min/hide-ads.min.css',
       '{{hide-shop}}': './css/optionals/min/hide-shop.min.css',
       '{{hide-vip}}': './css/optionals/min/hide-vip.min.css',
@@ -57,7 +59,7 @@ gulp.task( 'sass', function () {
     .pipe( sass( {
       outputStyle: 'expanded'
     } ).on( 'error', sass.logError ) )
-    .pipe( gulp.dest( './css' ) )
+    .pipe( gulp.dest( './css/theme' ) )
 } )
 
 gulp.task( 'sass:watch', function () {

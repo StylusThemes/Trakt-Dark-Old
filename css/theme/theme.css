@@ -73,7 +73,6 @@ input#user_username.string.required.middle.form-control {
 .form-control:focus {
   border-color: #888 !important;
   outline: 0 !important;
-  -webkit-box-shadow: 0 0 4px 1px #ed1c24 !important;
   box-shadow: 0 0 4px 1px #ed1c24 !important;
 }
 
@@ -144,14 +143,12 @@ header#top-nav #top-brand .bottom-wrapper .bottom {
   border: 1px solid #000102 !important;
   color: #888 !important;
   background: #2c2c33 !important;
-  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75) !important;
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75) !important;
 }
 
 #header-search:hover {
   border: 1px solid #000102 !important;
   color: #888 !important;
-  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75) !important;
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75) !important;
 }
 
@@ -159,14 +156,12 @@ header#top-nav #header-search #header-search-button.btn-primary {
   border: 1px solid #000102 !important;
   color: #888 !important;
   background: #2c2c33 !important;
-  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75) !important;
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75) !important;
 }
 
 header#top-nav #header-search #header-search-button.btn-primary:hover {
   border: 1px solid #000102 !important;
   color: #888 !important;
-  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75) !important;
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75) !important;
 }
 
