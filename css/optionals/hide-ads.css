@@ -1,5 +1,7 @@
 /*::: Hide Ads :::*/
 [class*="huckster"],
-[id*="huckster"] {
+[id*="huckster"],
+[class*="huck-ster"],
+[id*="huck-ster"] {
   display: none !important;
 }
