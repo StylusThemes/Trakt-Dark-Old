@@ -2,6 +2,8 @@
 [class*="huckster"],
 [id*="huckster"],
 [class*="huck-ster"],
-[id*="huck-ster"] {
+[id*="huck-ster"],
+[class*="hu-ck-ster"],
+[id*="hu-ck-ster"] {
   display: none !important;
 }

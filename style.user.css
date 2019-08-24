@@ -11,7 +11,7 @@
 
 @advanced dropdown Ads "Hide Ads?" {
 ADSY "Yes" <<<EOT
-[class*=huck-ster],[class*=huckster],[id*=huck-ster],[id*=huckster]{display:none!important} EOT;
+[class*=hu-ck-ster],[class*=huck-ster],[class*=huckster],[id*=hu-ck-ster],[id*=huck-ster],[id*=huckster]{display:none!important} EOT;
 ADSN "No" <<<EOT
  EOT;
 }
