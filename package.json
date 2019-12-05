@@ -8,24 +8,28 @@
   "homepage": "https://github.com/StylusThemes/Trakt-Dark",
   "main": "style.user.css",
   "dependencies": {
-    "npm": "^6.10.0"
+    "yarn": "^1.21.0"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
+    "eslint": "^6.7.2",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^6.1.0",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-beautify": "^3.0.0",
     "gulp-clean-css": "^4.2.0",
     "gulp-file-insert": "^2.0.0",
-    "gulp-rename": "^1.4.0",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.0.2",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.0",
     "sass-lint": "^1.13.1",
-    "standard": "^13.0.0",
-    "updates": "^8.2.1"
+    "standard": "^14.3.1",
+    "updates": "^9.3.0"
   },
+  "browserslist": [
+    "> 0.2%",
+    "last 2 versions"
+  ],
   "scripts": {
-    "update": "updates -cu && npm install",
+    "update": "updates -cu && yarn install",
     "start": "gulp default"
   }
 }

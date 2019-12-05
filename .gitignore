@@ -1,6 +1,3 @@
-# lockfiles
-yarn.lock
-
 # temp stuff
 tmp/
 *.tmp
