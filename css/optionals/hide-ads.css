@@ -1,11 +1,11 @@
-/*::: Hide Ads :::*/
 [class*=hu-ck-ster],
 [class*=huck-ster],
 [class*=huckster],
 [class*=hu-ck-st-er-],
+[class*=hu-ck--st-er-],
 [id*=hu-ck-ster],
 [id*=huck-ster],
 [id*=huckster],
-[id*=hu-ck-st-er-] {
-  display: none!important;
+[id*=hu-ck--st-er-] {
+  display: none !important;
 }
